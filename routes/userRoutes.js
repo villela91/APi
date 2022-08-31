@@ -1,11 +1,19 @@
 import { authentication } from "../midlewares/auth.js";
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("../doc/swagger.json");
+
+
 export class UserRoutes {
     constructor(controller, router) {
       this.userController = controller;
       this.router = router;
     }
+
+
   
     route() {
+      this.router.use('/api-docs', swaggerUi.serve);
+      this.router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
       this.router.get("/", (req, res) => this.userController.find(req, res));
       this.router.post("/create", (req, res) =>
