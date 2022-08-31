@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API ricky and morthy",
+      "description": "api que traz os personagens de ricky and morthy",
+      "termsOfService": "",
+      "contact": {
+        "email": "luiz.villela91@gmail.com"
+      },
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000/user",
+        "description": "API de teste - desenvolvimento e homologação"
+      },
+      {
+        "url": "https://pjblue03.herokuapp.com/",
+        "description": "API de produção"
+      }
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "listar todos os usuarios cadastrados",
+          "description": "rota responsavel por listar todos os suarios cadastrados",
+          "tags": ["Users"],
+          "responses": {
+            "404": {
+              "description": "Not Found ;("
+            },
+            "200": {
+              "description": "OK ;D",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Users"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Users": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "characters":{
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+  
