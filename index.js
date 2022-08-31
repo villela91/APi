@@ -6,7 +6,9 @@ import { makeUserFactory } from "./factories/user.js";
 import { makeCharacterFactory } from "./factories/character.js";
 import { makeAuthFactory } from "./factories/auth.js";
 import { makeEquipmentsFactory } from "./factories/equipment.js";
+import { config } from "dotenv";
 
+config();
 const ConnectDb = new MongoDbConnection();
 await ConnectDb.ConnectDb();
 
