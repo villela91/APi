@@ -1,4 +1,4 @@
-import * as bcrypt from "bcrypt.js";
+import * as bcrypt from "bcryptjs";
 
 export class BcryptHelper {
   hashGenerator(password) {

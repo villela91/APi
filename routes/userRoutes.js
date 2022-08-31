@@ -1,6 +1,6 @@
 import { authentication } from "../midlewares/auth.js";
-const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("../doc/swagger.json");
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "../doc/swagger.json" assert {type: "json"};
 
 
 export class UserRoutes {
