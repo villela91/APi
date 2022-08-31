@@ -1,4 +1,4 @@
-import { UserRepositoryMongoDb } from "../database/repository/userRepository.js";
+import { UserRepositoryMongoDb } from "../database/repositories/userRepository.js";
 import { CreateUserUseCase } from "../services/usecases/user/createUser.js";
 import { UpdateUserUseCase } from "../services/usecases/user/updateUser.js";
 import { DeleteUserUseCase } from "../services/usecases/user/deleteUser.js";

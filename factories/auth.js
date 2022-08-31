@@ -1,5 +1,5 @@
 import { AuthRoutes } from "../routes/authRoutes.js";
-import { AuthController } from "../controllers/authController.js";
+import { AuthController } from "../controller/authController.js";
 import { FindUserByEmailUseCase } from "../services/usecases/user/findUserByEmail.js";
 import { UserRepositoryMongoDb } from "../database/repositories/userRepository.js";
 import { BcryptHelper } from "../auth/bcrypt.js";

@@ -1,4 +1,4 @@
-import { CharacterEntity } from "../../../entilies/character.js";
+import { CharacterEntity } from "../../../entities/character.js";
 export class UpdateCharacterUseCase {
   constructor(characterRepository, findCharacterById) {
     this.repository = characterRepository;

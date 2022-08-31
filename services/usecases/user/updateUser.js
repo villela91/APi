@@ -1,4 +1,4 @@
-import { UserEntity } from "../../../entilies/user.js";
+import { UserEntity } from "../../../entities/user.js";
 export class UpdateUserUseCase {
   constructor(userRepository, findUserById) {
     this.repository = userRepository;

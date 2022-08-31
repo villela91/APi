@@ -1,6 +1,6 @@
 import { EquipmentsRepository } from "../database/repositories/equipmentsRepository.js";
 import { CreateEquipmentUseCase } from "../services/usecases/equipment/createEquipmentUseCase.js";
-import { EquipmentsController } from "../controllers/equipmentsController.js";
+import { EquipmentsController } from "../controller/equipmentsController.js";
 import { EquipmentRoutes } from "../routes/equipmentRoutes.js";
 
 export function makeEquipmentsFactory(router) {

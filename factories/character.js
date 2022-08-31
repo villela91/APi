@@ -1,5 +1,5 @@
-import { CharacterRepositoryMongoDb } from "../database/repository/characterRepository.js";
-import { UserRepositoryMongoDb } from "../database/repository/userRepository.js";
+import { CharacterRepositoryMongoDb } from "../database/repositories/characterRepository.js";
+import { UserRepositoryMongoDb } from "../database/repositories/userRepository.js";
 import { CreateCharacterUseCase } from "../services/usecases/character/createCharacter.js";
 import { UpdateCharacterUseCase } from "../services/usecases/character/updateCharacter.js";
 import { FindAllCharacterUseCase } from "../services/usecases/character/findAllcharacter.js";
